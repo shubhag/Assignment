@@ -1,0 +1,34 @@
+How to run:
+
+a) Heartbeat
+==================
+python heartbeat-server.py 		#this starts the server on port 8080
+
+								#On monitoring machine that hear heartbeat of server, run
+python heartbeat-monitor.py 	#change the host in client.py code with the server's ip-								#address before running python code
+
+Working
+==================
+
+Server connects with the monitor using socket. It then sends heartbeat after every 1 second.
+
+Monitor connects with the server. It listens to the heartbeat of the server. If it is unable to hear heartbeat or ping in 5 seconds, it displays heartbeat is down. 
+
+
+b)Ping/Echo
+============================
+python ping-server.py 			#this starts the server on port 8080
+
+								#On monitoring machine that pings and hear heartbeat of server, run
+python ping-monitor.py 			#change the host in client.py code with the server's ip-								#address before running python code
+
+Working
+============================
+Monitor sends ping message to the server using socket. Server on receiving ping message, sends back echo message to the monitor. 
+
+When monitor is unable to listen to the echo message even after 5 seconds of wait, it declares fault with the server.
+
+
+Note:
+=====================
+Port should be same in both server and monitor. Variable is "port" in python code. If running on different machine or on a VM, change the monitor "host" to that of the ip-address of the server.

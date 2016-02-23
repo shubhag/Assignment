@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="operanda">Operand A</string>
+    <string name="operandb">Operand B</string>
+    <string name="operator">OP</string>
+    <string name="result">Result</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="mult">*</string>
+    <string name="div">/</string>
+    <string name="pow">^</string>
+    <string name="exp">e</string>
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="cal">=</string>
+</resources>
